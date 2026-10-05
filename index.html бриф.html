@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Бриф на сайт клиники · Adlan</title>
+<meta name="description" content="Бриф на сайт стоматологической клиники. 8 коротких блоков, 10–15 минут, ответы сохраняются автоматически.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#F2F6FC">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Бриф на сайт клиники · Adlan">
+<meta property="og:description" content="Ответьте на вопросы о клинике, и я соберу сайт, который приводит пациентов на запись.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23ffffff'/%3E%3Cpath d='M8 33 L20 7 L32 33' fill='none' stroke='%2315306F' stroke-width='4.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M13.2 23.4 Q20 28.6 26.8 23.4' fill='none' stroke='%232457D6' stroke-width='3.6' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Unbounded:wght@300;400&display=swap" rel="stylesheet">
+<style>
+/* ================= ДИЗАЙН-ТОКЕНЫ ================= */
+:root{
+  --bg:#F2F6FC;
+  --surface:#FFFFFF;
+  --surface-2:#F7FAFE;
+  --tint:#E6EEFA;
+  --ink:#0E1C38;
+  --ink-2:#2B3A57;
+  --muted:#5A6A86;
+  --line:#D6E0EE;
+  --line-2:#B9C8DF;
+  --navy:#15306F;
+  --navy-2:#1C3D8C;
+  --blue:#2457D6;
+  --blue-soft:rgba(36,87,214,.14);
+  --danger:#B3263A;
+  --danger-line:#E7B4BC;
+  --danger-soft:#FCF0F2;
+  --ok:#1C6E4C;
+  --ok-soft:#EAF5EF;
+  --ok-line:#BFE0CE;
+  --r-lg:20px;
+  --r:14px;
+  --r-sm:12px;
+  --shadow:0 1px 2px rgba(14,28,56,.04),0 10px 28px -16px rgba(14,28,56,.18);
+  --font:'Golos Text',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  --display:'Unbounded','Golos Text',system-ui,sans-serif;
+  --side-w:232px;
+  --gap:56px;
+  --content:704px;
+}
+
+/* ================= БАЗА ================= */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-padding-top:110px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+button{font:inherit;color:inherit}
+[hidden]{display:none!important}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ================= ШАПКА ================= */
+.top{position:sticky;top:0;z-index:30;padding:calc(10px + env(safe-area-inset-top)) 16px 0}
+.top-in{max-width:1180px;margin:0 auto;position:relative;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 20px 14px;background:rgba(255,255,255,.9);-webkit-backdrop-filter:saturate(1.4) blur(14px);backdrop-filter:saturate(1.4) blur(14px);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);overflow:hidden}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.mark{width:40px;height:40px;flex:0 0 auto;display:block}
+.brand-name{font-family:var(--display);font-weight:400;font-size:19px;line-height:1.1;color:var(--navy);letter-spacing:.01em}
+.brand-sub{font-size:12.5px;color:var(--muted);letter-spacing:.06em;margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.meter{text-align:right;flex:0 0 auto}
+.meter-txt{font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600;font-variant-numeric:tabular-nums}
+.meter-txt b{color:var(--navy);font-weight:700}
+.meter-time{font-size:12px;color:var(--muted);margin-top:3px}
+.bar{position:absolute;left:18px;right:18px;bottom:0;height:3px;background:var(--tint);border-radius:3px 3px 0 0;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--navy);transition:width .45s cubic-bezier(.2,.7,.2,1)}
+
+/* ================= РАСКЛАДКА ================= */
+.layout{max-width:1180px;margin:0 auto;padding:30px 16px calc(130px + env(safe-area-inset-bottom));display:grid;grid-template-columns:var(--side-w) minmax(0,1fr);gap:var(--gap)}
+.main{min-width:0;max-width:var(--content)}
+
+/* ================= БОКОВОЕ МЕНЮ ================= */
+.side{position:sticky;top:112px;align-self:start;display:flex;flex-direction:column;gap:4px}
+.side-btn{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;padding:13px 14px;border-radius:12px;border:1px solid transparent;background:none;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;color:var(--muted);cursor:pointer;text-align:left;-webkit-tap-highlight-color:transparent;touch-action:manipulation;transition:background .15s,color .15s,border-color .15s}
+.side-btn.on{background:#fff;color:var(--navy);border-color:var(--line);box-shadow:var(--shadow)}
+.cnt{font-variant-numeric:tabular-nums;font-size:12px;letter-spacing:.02em;font-weight:600;white-space:nowrap}
+.cnt.miss{color:var(--danger)}
+.cnt.done{color:var(--blue)}
+@media (hover:hover){.side-btn:not(.on):hover{color:var(--ink);background:rgba(255,255,255,.6)}}
+
+/* ================= БЛОК ================= */
+.blk{display:none}
+.blk.on{display:block;animation:blkIn .35s cubic-bezier(.2,.7,.2,1)}
+@keyframes blkIn{from{opacity:.25;transform:translateY(10px)}to{opacity:1;transform:none}}
+.kick{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:4px 0 0}
+.kick b{color:var(--navy);font-weight:700}
+.blk-title{font-family:var(--display);font-weight:300;font-size:clamp(27px,5.2vw,50px);line-height:1.1;letter-spacing:-.005em;text-transform:uppercase;margin:12px 0 14px;color:var(--ink);overflow-wrap:break-word}
+.lead{color:var(--ink-2);font-size:16.5px;max-width:580px;margin:0 0 26px;line-height:1.55}
+.note{background:var(--tint);border-radius:16px;padding:16px 18px;color:var(--ink-2);font-size:15px;margin:0 0 16px;line-height:1.55}
+.note b{color:var(--navy)}
+
+/* ================= ВОПРОС ================= */
+.q{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:24px 26px 26px;margin-bottom:14px;display:grid;grid-template-columns:30px minmax(0,1fr);column-gap:10px;scroll-margin-top:120px;transition:border-color .25s,box-shadow .25s,background .25s}
+.q.need{border-color:var(--danger-line);background:#FFFDFD}
+.q.flash{box-shadow:0 0 0 4px var(--blue-soft);border-color:var(--blue)}
+.qn{font-size:13px;color:var(--muted);font-weight:600;padding-top:3px;font-variant-numeric:tabular-nums}
+.q.need .qn{color:var(--danger)}
+.qc{min-width:0}
+.qt{font-size:17.5px;font-weight:600;line-height:1.35;margin:0;color:var(--ink)}
+.req{color:var(--danger);margin-left:5px}
+.qh{font-size:14.5px;color:var(--muted);margin:6px 0 0;line-height:1.5}
+.qb{margin-top:16px}
+.need-msg{display:none;font-size:13.5px;color:var(--danger);margin-top:10px}
+.q.need .need-msg{display:block}
+
+/* ================= ПОЛЯ ================= */
+.inp{display:block;width:100%;font:inherit;font-size:16px;color:var(--ink);background:var(--surface-2);border:1.5px solid var(--line);border-radius:var(--r-sm);padding:14px 16px;outline:none;transition:border-color .15s,background .15s,box-shadow .15s;-webkit-appearance:none;appearance:none}
+textarea.inp{min-height:108px;resize:vertical;line-height:1.5;overflow:hidden}
+.inp::placeholder{color:#8794AA;opacity:1}
+.inp:focus{border-color:var(--blue);background:#fff;box-shadow:0 0 0 4px var(--blue-soft)}
+.other{margin-top:10px}
+
+/* ================= ВАРИАНТЫ ОТВЕТА ================= */
+.opts{display:flex;flex-direction:column;gap:10px}
+.opts.chips{flex-direction:row;flex-wrap:wrap}
+.opt{display:flex;align-items:center;gap:12px;width:100%;min-height:52px;padding:12px 16px;border:1.5px solid var(--line);border-radius:var(--r-sm);background:var(--surface-2);font-size:15.5px;line-height:1.35;color:var(--ink);text-align:left;cursor:pointer;transition:background .15s,border-color .15s,color .15s;-webkit-tap-highlight-color:transparent;touch-action:manipulation;-webkit-user-select:none;user-select:none}
+.chips .opt{width:auto;max-width:100%;min-height:46px;padding:10px 16px}
+.opt .ind{flex:0 0 auto;width:20px;height:20px;border:1.5px solid #9AACC9;border-radius:50%;display:grid;place-items:center;background:#fff;transition:border-color .15s,background .15s}
+.opt .ind::after{content:"";width:8px;height:8px;border-radius:50%;background:var(--navy);transform:scale(0);transition:transform .15s}
+.opt.multi .ind{border-radius:6px}
+.opt.multi .ind::after{display:none}
+.opt .ind svg{width:13px;height:13px;opacity:0;transition:opacity .12s}
+.opt.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.opt.on .ind{border-color:#fff}
+.opt.on .ind::after{transform:scale(1)}
+.opt.multi.on .ind svg{opacity:1}
+.opt:focus-visible,.btn:focus-visible,.side-btn:focus-visible,.miss-chip:focus-visible,.reset:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+@media (hover:hover){.opt:not(.on):hover{border-color:var(--line-2);background:#fff}}
+
+/* ================= ГРУППЫ ПОЛЕЙ ================= */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fld{display:block;min-width:0}
+.fld.full{grid-column:1/-1}
+.fl{display:block;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:7px}
+.fl .req{margin-left:3px}
+
+/* ================= НИЖНЯЯ ПАНЕЛЬ ================= */
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:40;background:rgba(242,246,252,.92);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-top:1px solid var(--line);padding:12px 16px calc(12px + env(safe-area-inset-bottom))}
+.dock-in{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:var(--side-w) minmax(0,1fr);gap:var(--gap)}
+.dock-btns{display:flex;gap:12px;max-width:var(--content)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:var(--r-sm);font-weight:600;font-size:13.5px;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;border:1.5px solid transparent;transition:background .15s,color .15s,border-color .15s;-webkit-tap-highlight-color:transparent;touch-action:manipulation;min-width:172px;text-align:center;line-height:1.2}
+.btn svg{width:16px;height:16px;flex:0 0 auto;transition:transform .2s}
+.btn-ghost{background:#fff;border-color:var(--line);color:var(--ink)}
+.btn-main{background:var(--navy);color:#fff}
+.btn-light{background:var(--tint);color:var(--navy);border-color:var(--tint)}
+.btn[disabled]{opacity:.4;cursor:default}
+@media (hover:hover){
+  .btn-main:hover{background:var(--navy-2)}
+  .btn-main:hover svg{transform:translateX(3px)}
+  .btn-ghost:hover{border-color:var(--line-2)}
+  .btn-light:hover{border-color:var(--line-2)}
+}
+
+/* ================= ОТПРАВКА ================= */
+.status{border-radius:var(--r-lg);padding:20px 22px;margin-bottom:22px;border:1px solid}
+.status.bad{background:var(--danger-soft);border-color:var(--danger-line)}
+.status.good{background:var(--ok-soft);border-color:var(--ok-line)}
+.status h3{margin:0;font-size:16.5px;font-weight:600}
+.status.bad h3{color:var(--danger)}
+.status.good h3{color:var(--ok)}
+.status p{margin:6px 0 0;font-size:14.5px;color:var(--ink-2)}
+.miss-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.miss-chip{background:#fff;border:1px solid var(--danger-line);border-radius:10px;padding:9px 13px;font-size:14px;color:var(--ink);cursor:pointer;text-align:left;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+@media (hover:hover){.miss-chip:hover{border-color:var(--danger)}}
+.steps{list-style:none;padding:0;margin:0 0 20px;display:grid;gap:12px;counter-reset:s}
+.steps li{display:grid;grid-template-columns:26px minmax(0,1fr);gap:8px;font-size:15.5px;color:var(--ink-2);line-height:1.5}
+.steps li::before{counter-increment:s;content:counter(s) ".";font-weight:700;color:var(--navy)}
+.steps b{color:var(--ink)}
+.sum-label{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:0 0 8px}
+.summary{display:block;width:100%;min-height:320px;max-height:460px;font:inherit;font-size:14.5px;line-height:1.55;border:1.5px solid var(--line);border-radius:var(--r);padding:16px;background:#fff;color:var(--ink);resize:vertical;outline:none;overflow:auto}
+.summary:focus{border-color:var(--blue);box-shadow:0 0 0 4px var(--blue-soft)}
+.send{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+.send .wide{grid-column:1/-1}
+.send .btn{min-width:0;width:100%}
+.reset{display:inline-block;margin-top:22px;background:none;border:0;color:var(--muted);text-decoration:underline;text-underline-offset:3px;font-size:14px;cursor:pointer;padding:8px 0}
+
+/* ================= ОКНО ПОДТВЕРЖДЕНИЯ ================= */
+.modal{position:fixed;inset:0;z-index:80;display:flex;align-items:center;justify-content:center;padding:20px;background:rgba(14,28,56,.42);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);opacity:0;pointer-events:none;transition:opacity .2s}
+.modal.show{opacity:1;pointer-events:auto}
+.modal-box{width:100%;max-width:420px;background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:26px 24px 22px;box-shadow:0 24px 60px -24px rgba(14,28,56,.45);transform:translateY(10px);transition:transform .2s}
+.modal.show .modal-box{transform:none}
+.modal-box h3{margin:0;font-size:19px;font-weight:600;line-height:1.35;color:var(--ink)}
+.modal-box p{margin:8px 0 0;font-size:15px;line-height:1.5;color:var(--muted)}
+.modal-btns{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}
+.modal-btns .btn{min-width:0;width:100%}
+.btn-danger{background:var(--danger);color:#fff}
+@media (hover:hover){.btn-danger:hover{background:#9A1F31}}
+
+/* ================= УВЕДОМЛЕНИЕ ================= */
+.toast{position:fixed;left:50%;bottom:calc(96px + env(safe-area-inset-bottom));transform:translate(-50%,12px);opacity:0;background:var(--ink);color:#fff;padding:12px 18px;border-radius:12px;font-size:14.5px;line-height:1.4;width:max-content;max-width:calc(100vw - 32px);text-align:center;pointer-events:none;transition:opacity .25s,transform .25s;z-index:60}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* ================= ТЕЛЕФОН И ПЛАНШЕТ ================= */
+@media (max-width:959px){
+  .layout{grid-template-columns:minmax(0,1fr);gap:16px;padding-top:14px}
+  .main{max-width:none}
+  .side{position:static;flex-direction:row;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin:0 -16px;padding:2px 16px 8px;gap:8px}
+  .side::-webkit-scrollbar{display:none}
+  .side-btn{flex:0 0 auto;width:auto;white-space:nowrap;background:rgba(255,255,255,.65);border-color:var(--line);padding:11px 14px;font-size:12px}
+  .dock-in{grid-template-columns:minmax(0,1fr)}
+  .dock-spacer{display:none}
+  .dock-btns{max-width:none}
+  .dock-btns .btn{flex:1;min-width:0}
+}
+@media (max-width:600px){
+  .top{padding:calc(8px + env(safe-area-inset-top)) 10px 0}
+  .top-in{padding:10px 14px 12px;border-radius:16px}
+  .mark{width:34px;height:34px}
+  .brand-name{font-size:17px}
+  .brand-sub{font-size:12px;letter-spacing:.02em}
+  .meter-txt{font-size:12px;letter-spacing:.06em}
+  .meter-word,.meter-time{display:none}
+  .layout{padding-left:12px;padding-right:12px}
+  .side{margin:0 -12px;padding-left:12px;padding-right:12px}
+  .q{padding:20px 16px 20px;grid-template-columns:24px minmax(0,1fr);column-gap:6px;border-radius:16px}
+  .qt{font-size:16.5px}
+  .lead{font-size:15.5px}
+  .opt{font-size:15px;padding:12px 14px}
+  .chips .opt{padding:10px 14px}
+  .grid2{grid-template-columns:minmax(0,1fr)}
+  .send{grid-template-columns:minmax(0,1fr)}
+  .dock{padding-left:12px;padding-right:12px}
+  .btn{padding:0 16px;letter-spacing:.1em}
+  .summary{min-height:260px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-in">
+    <div class="brand">
+      <svg class="mark" viewBox="0 0 40 40" aria-hidden="true">
+        <path d="M8 33 L20 7 L32 33" fill="none" stroke="#15306F" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M13.2 23.4 Q20 28.6 26.8 23.4" fill="none" stroke="#2457D6" stroke-width="3.6" stroke-linecap="round"/>
+      </svg>
+      <div style="min-width:0">
+        <div class="brand-name">Adlan</div>
+        <div class="brand-sub">Бриф на сайт клиники</div>
+      </div>
+    </div>
+    <div class="meter">
+      <div class="meter-txt"><span class="meter-word">Заполнено </span><b id="mDone">0</b> из <b id="mTotal">0</b></div>
+      <div class="meter-time" id="mSaved">10–15 минут</div>
+    </div>
+    <div class="bar" aria-hidden="true"><i id="mBar"></i></div>
+  </div>
+</header>
+
+<div class="layout">
+  <nav class="side" id="side" aria-label="Блоки брифа"></nav>
+  <main class="main" id="main"></main>
+</div>
+
+<div class="dock">
+  <div class="dock-in">
+    <div class="dock-spacer"></div>
+    <div class="dock-btns">
+      <button type="button" class="btn btn-ghost" id="prev">Назад</button>
+      <button type="button" class="btn btn-main" id="next">Дальше
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8.5 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<div class="modal" id="resetModal" role="dialog" aria-modal="true" aria-labelledby="resetTitle" aria-hidden="true">
+  <div class="modal-box">
+    <h3 id="resetTitle">Вы действительно хотите очистить бриф и начать заново?</h3>
+    <p>Все ответы удалятся, вернуть их будет нельзя.</p>
+    <div class="modal-btns">
+      <button type="button" class="btn btn-ghost" id="resetNo">Нет</button>
+      <button type="button" class="btn btn-danger" id="resetYes">Да</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+'use strict';
+
+/* ================= НАСТРОЙКИ: меняй здесь ================= */
+var CONFIG = {
+  whatsapp: '79667279553',      // номер для кнопки WhatsApp, без +, пробелов и восьмёрки
+  telegram: 'AdlanMz',          // ник в Telegram без @
+  storageKey: 'adlan_brief_dental_v1',
+  budget: [
+    'До 30 000 ₽',
+    '30 000 – 60 000 ₽',
+    '60 000 – 90 000 ₽',
+    '90 000 – 120 000 ₽',
+    'Больше 120 000 ₽',
+    'Не знаю, нужна оценка по брифу'
+  ],
+  budgetHint: 'Для ориентира: сайт клиники без админки обычно от 50 000 ₽, с админкой, где вы сами меняете цены, врачей и акции, 90 000–100 000 ₽ и выше. Вилка нужна, чтобы я предложил реальный объём работы, а не абстрактную смету.'
+};
+
+/* ================= ФУНКЦИИ (используются в условиях) ================= */
+var F = {
+  book:   'Онлайн-запись: услуга, врач, дата и время',
+  call:   'Простая заявка: имя и телефон, администратор перезвонит',
+  price:  'Прайс с поиском по услугам',
+  docs:   'Страница каждого врача',
+  pages:  'Отдельная страница на каждую услугу',
+  quiz:   'Квиз: пациент отвечает на вопросы и узнаёт примерную цену',
+  calc:   'Калькулятор стоимости имплантации',
+  credit: 'Рассрочка и кредит',
+  tax:    'Как получить налоговый вычет за лечение',
+  promo:  'Акции, которые включаете сами',
+  admin:  'Админка: сами меняете цены, врачей, фото и акции',
+  notify: 'Уведомления о новых записях в Telegram или WhatsApp',
+  rev:    'Отзывы с ПроДокторов и Яндекс Карт прямо на сайте',
+  faq:    'Вопросы и ответы',
+  eye:    'Версия для слабовидящих',
+  blog:   'Статьи для продвижения в поиске',
+  lang:   'Версия на другом языке',
+  stat:   'Аналитика: сколько записей пришло с сайта',
+  logo:   'Логотип и фирменный стиль',
+  print:  'Полиграфия: визитки, листовки, наклейка с QR'
+};
+var MIS = 'Программа клиники (IDENT, 1С и др.)';
+
+function inc(v, x){ return Array.isArray(v) && v.indexOf(x) !== -1; }
+
+/* ================= ВОПРОСЫ ================= */
+var BLOCKS = [
+{
+  id:'clinic', nav:'О клинике', title:'О клинике', emoji:'🏥',
+  lead:'Коротко: кто вы, где принимаете и как давно работаете.',
+  intro:true,
+  q:[
+    {id:'name', type:'text', req:1, s:'Клиника', title:'Как называется клиника?', ph:'Стоматология «Новая улыбка»'},
+    {id:'about', type:'textarea', req:1, s:'Чем занимается', title:'Чем занимаетесь, в двух словах', hint:'Так, как сказали бы пациенту, который слышит о вас впервые.', ph:'Лечим, ставим импланты и брекеты. Свой рентген, есть детский врач, принимаем без долгих очередей'},
+    {id:'format', type:'single', s:'Формат', title:'Формат клиники', options:['Частный кабинет, один-два врача','Клиника по одному адресу','Сеть, несколько филиалов','Ещё открываемся']},
+    {id:'address', type:'textarea', req:1, s:'Адрес', title:'Город и адрес', hint:'Если филиалов несколько, пишите каждый с новой строки. Ориентир тоже пригодится.', ph:'Грозный, ул. Садовая, 15, 2 этаж, вход со двора'},
+    {id:'hours', type:'text', req:1, s:'Режим работы', title:'Режим работы', ph:'Пн–Сб 9:00–20:00, Вс выходной'},
+    {id:'years', type:'single', chips:1, s:'На рынке', title:'Сколько вы на рынке?', options:['Меньше года','1–3 года','3–10 лет','Больше 10 лет']},
+    {id:'site_now', type:'single', s:'Сайт сейчас', title:'Есть ли у вас сайт сейчас?', options:['Нет, это первый','Есть, но устарел и не приносит записей','Есть, нужен новый с нуля']},
+    {id:'site_url', type:'text', s:'Текущий сайт', title:'Ссылка на текущий сайт', ph:'https://', inputmode:'url', show:function(a){ return !!a.site_now && a.site_now !== 'Нет, это первый'; }}
+  ]
+},
+{
+  id:'goal', nav:'Задача сайта', title:'Задача сайта', emoji:'🎯',
+  lead:'Сайт строится вокруг одного главного действия пациента. Определим его.',
+  q:[
+    {id:'site_type', type:'single', s:'Какой сайт', title:'Какой сайт вам нужен?', options:['Одна страница: о клинике, услуги, врачи и запись','Многостраничный: отдельная страница на каждую услугу и врача, продвижение в поиске','Не знаю, подскажите']},
+    {id:'main_action', type:'single', chips:1, req:1, other:1, s:'Главное действие', title:'Что пациент должен сделать на сайте в первую очередь?', hint:'Одно главное действие. Остальное сайт тоже будет уметь.', options:['Записаться онлайн на время','Оставить заявку на звонок','Написать в WhatsApp','Позвонить','Узнать стоимость лечения','Другое']},
+    {id:'priority', type:'single', s:'Что важнее', title:'Что для вас важнее?', hint:'Попытка сделать оба сразу даёт тяжёлый сайт, который хуже записывает. Поэтому выбираем одно.', options:['Сайт для записи: быстрый, всё ведёт к записи','Сайт для имиджа: эффектный, с анимациями','Не знаю, посоветуйте']},
+    {id:'booking_now', type:'multi', chips:1, req:1, other:1, s:'Как записываются сейчас', title:'Как пациенты записываются сейчас?', hint:'Можно выбрать несколько.', options:['Звонок администратору','WhatsApp','Telegram','Instagram, директ','Приходят без записи',MIS,'Другое']},
+    {id:'mis', type:'text', s:'Программа записи', title:'В какой программе ведёте запись?', hint:'Чтобы понять, можно ли связать её с сайтом.', ph:'IDENT, 1С:Стоматология, Dental4Windows, Excel', show:function(a){ return inc(a.booking_now, MIS); }},
+    {id:'leads_to', type:'multi', chips:1, s:'Куда слать заявки', title:'Куда присылать заявки с сайта?', options:['В WhatsApp администратору','В Telegram','На почту','Достаточно звонка']},
+    {id:'patients_count', type:'textarea', s:'Пациентов в месяц', title:'Сколько новых пациентов в месяц сейчас и сколько хотели бы?', hint:'Примерно. По этим цифрам понятно, какую нагрузку закладывать.', ph:'Сейчас около 40 первичных в месяц, хотим 70–80'},
+    {id:'traffic', type:'multi', chips:1, s:'Откуда придут на сайт', title:'Откуда люди будут попадать на сайт?', options:['Instagram','Telegram','Яндекс Директ','Поиск Яндекса и Google','Яндекс Карты, 2ГИС','ПроДокторов','QR-код в клинике','Рекомендации знакомых','Пока не знаю']}
+  ]
+},
+{
+  id:'patients', nav:'Ваши пациенты', title:'Ваши пациенты', emoji:'👥',
+  lead:'Тексты и структура пишутся под конкретных людей. Расскажите о них своими словами.',
+  q:[
+    {id:'patient', type:'textarea', s:'Типичный пациент', title:'Кто ваш типичный пациент?', hint:'Возраст, кто он, в какой ситуации ищет клинику.', ph:'Семьи с детьми и взрослые 30–55 лет. Многие приезжают из районов и хотят сделать всё за один-два визита'},
+    {id:'directions', type:'multi', chips:1, req:1, s:'Направления', title:'Какие направления главные?', hint:'Отметьте всё, что делаете и хотите показать на сайте.', options:['Лечение кариеса и каналов','Имплантация','Протезирование: коронки, мосты','Виниры и эстетика','Брекеты и элайнеры','Детская стоматология','Хирургия и удаление','Гигиена и отбеливание','Пародонтология','Лечение во сне, под седацией']},
+    {id:'focus', type:'text', s:'Продвигать в первую очередь', title:'Какое направление продвигать в первую очередь?', hint:'Где вы зарабатываете больше всего или где хотите больше пациентов.', ph:'Имплантация и протезирование на имплантах'},
+    {id:'reasons', type:'multi', chips:1, s:'С чем приходят', title:'С чем к вам чаще всего приходят?', options:['Острая боль','Плановое лечение','Хотят красивую улыбку','Потеряли зубы','Нужен детский врач','Профгигиена и осмотр','Переделать после другой клиники']},
+    {id:'questions', type:'textarea', s:'Вопросы перед записью', title:'Что пациенты спрашивают чаще всего перед записью?', hint:'На эти вопросы сайт должен отвечать сам.', ph:'Больно ли ставить имплант? Сколько стоит под ключ? Есть ли рассрочка? Какая гарантия?'},
+    {id:'doubts', type:'multi', chips:1, other:1, s:'Почему сомневаются', title:'Почему сомневаются или уходят?', options:['Дорого','Боятся боли','Не доверяют врачу','Долго ждать записи','Далеко или неудобно','Не понимают, чем вы лучше','Откладывают на потом','Другое']},
+    {id:'check', type:'text', s:'Средний чек', title:'Средний чек', ph:'Лечение около 8 000 ₽, имплантация от 35 000 ₽'},
+    {id:'unique', type:'textarea', req:1, s:'Отличия', title:'Чем вы отличаетесь от других клиник?', hint:'Честно, без «качество и индивидуальный подход». Один-два реальных факта.', ph:'Свой компьютерный томограф: снимок за 10 минут прямо в клинике. Гарантия на импланты 5 лет, письменно в договоре'},
+    {id:'competitors', type:'textarea', s:'Конкуренты', title:'Конкуренты: 2–3 клиники', hint:'Ссылки на сайт или Instagram. С кем вас сравнивают пациенты.', ph:'site.ru, instagram.com/clinic'}
+  ]
+},
+{
+  id:'materials', nav:'Материалы', title:'Материалы', emoji:'📁',
+  lead:'Срок работы считается с момента, когда все материалы у меня. Поэтому важно понять, что уже есть.',
+  q:[
+    {id:'price', type:'single', req:1, s:'Прайс', title:'В каком виде у вас прайс?', hint:'Сам файл пришлите в чат после отправки брифа.', options:['Таблица Excel или Google','PDF или документ','Фото прайса','Есть на старом сайте или в соцсетях','Прайса нет, напишу основные цены']},
+    {id:'price_text', type:'textarea', s:'Основные цены', title:'Основные услуги и цены', hint:'Каждая услуга с новой строки.', ph:'Консультация: бесплатно\nЛечение кариеса: от 4 500 ₽\nИмплант под ключ: от 35 000 ₽', show:function(a){ return a.price === 'Прайса нет, напишу основные цены'; }},
+    {id:'photos', type:'single', req:1, s:'Фото клиники', title:'Есть ли свои фото клиники, кабинетов и оборудования?', hint:'Чужие и стоковые фото я не ставлю: пациент должен увидеть клинику, в которую придёт.', options:['Да, в хорошем качестве','Есть, но только в соцсетях','Есть часть','Нет, нужно снимать']},
+    {id:'doctors', type:'single', s:'Врачи', title:'Фото и данные врачей', options:['Есть фото, стаж и специализация','Есть фото, остальное расскажем','Нет, нужно снимать','Врачей на сайте не показываем']},
+    {id:'before_after', type:'single', s:'До и после', title:'Работы «до и после»', hint:'Публикуем только с письменного согласия пациента. Как показать работы аккуратно и без претензий по закону о рекламе, разберём отдельно.', options:['Есть, согласия пациентов есть','Есть, но согласий нет','Нет']},
+    {id:'video', type:'single', chips:1, s:'Видео', title:'Видео', options:['Есть готовое','Нет, но снимем','Нет и не нужно']},
+    {id:'texts', type:'single', s:'Тексты', title:'Тексты для сайта', options:['Есть свои','Напишите вы, расскажу по телефону','Возьмите из соцсетей и доработайте']},
+    {id:'reviews', type:'multi', chips:1, s:'Отзывы', title:'Где есть ваши отзывы?', options:['ПроДокторов','Яндекс Карты','2ГИС','НаПоправку','Скриншоты переписок','Видеоотзывы','Instagram','Отзывов пока нет']},
+    {id:'trust', type:'multi', chips:1, s:'Доверие', title:'Чем можно подтвердить доверие?', options:['Лицензия Минздрава','Дипломы и сертификаты врачей','Гарантия в договоре','Цифры: годы, пациенты, импланты','Оборудование: КТ, микроскоп, сканер','Бренды имплантов и материалов','Рассрочка','Награды и публикации','Ничего из этого']}
+  ]
+},
+{
+  id:'design', nav:'Дизайн', title:'Дизайн', emoji:'🎨',
+  lead:'Вкус у всех разный. Примеры скажут больше, чем описания.',
+  q:[
+    {id:'logo', type:'single', req:1, s:'Логотип и цвета', title:'Логотип и фирменные цвета', options:['Есть логотип и фирменные цвета','Есть только логотип','Нет, нужно сделать','Нет и пока не нужно']},
+    {id:'like', type:'textarea', req:1, s:'Нравятся сайты', title:'2–3 сайта, которые вам нравятся', hint:'Любые, можно не стоматологии. Напишите, что именно цепляет.', ph:'site.ru: большие фото врачей и спокойные цвета'},
+    {id:'dislike', type:'textarea', s:'Не нравится', title:'И один, который не нравится', hint:'Что в нём раздражает?'},
+    {id:'feel', type:'multi', chips:1, max:3, s:'Ощущение', title:'Каким должен ощущаться сайт?', hint:'Выберите до трёх.', options:['Строгий, медицинский','Тёплый, семейный','Премиальный','Минималистичный','Светлый, чистый','Технологичный','Спокойный','Яркий, смелый']},
+    {id:'theme', type:'single', chips:1, s:'Светлый или тёмный', title:'Светлый или тёмный?', options:['Светлый','Тёмный','Оба, с переключателем','На ваш вкус']},
+    {id:'taboo', type:'text', s:'Чего не должно быть', title:'Цвета или приёмы, которых точно не должно быть', ph:'Без красного, без мигающих баннеров'}
+  ]
+},
+{
+  id:'features', nav:'Функции', title:'Функции', emoji:'⚙️',
+  lead:'Отметьте только нужное. Ничего не отметите, соберу базовый вариант. Каждая функция влияет на срок и стоимость.',
+  q:[
+    {id:'features', type:'multi', s:'Функции', title:'Что должно быть на сайте?', hint:'Можно выбрать несколько.', options:[F.book,F.call,F.price,F.docs,F.pages,F.quiz,F.calc,F.credit,F.tax,F.promo,F.admin,F.notify,F.rev,F.faq,F.eye,F.blog,F.lang,F.stat,F.logo,F.print]},
+    {id:'book_details', type:'textarea', s:'Запись', title:'Как устроена запись?', hint:'Сколько врачей и кресел, сколько длится приём, на что записываем: консультация, лечение, гигиена.', ph:'3 врача, 2 кресла. Первичная консультация 30 минут, бесплатно', show:function(a){ return inc(a.features, F.book); }},
+    {id:'quiz_details', type:'text', s:'Расчёт стоимости', title:'По каким услугам считать стоимость?', ph:'Имплантация, брекеты, виниры', show:function(a){ return inc(a.features, F.quiz) || inc(a.features, F.calc); }},
+    {id:'credit_type', type:'single', chips:1, s:'Рассрочка', title:'Какая у вас рассрочка?', options:['Своя, без банка','Через банк','Обе','Пока планируем'], show:function(a){ return inc(a.features, F.credit); }},
+    {id:'promo_now', type:'textarea', s:'Акции сейчас', title:'Какие акции идут сейчас?', ph:'Консультация и снимок бесплатно при записи на имплантацию', show:function(a){ return inc(a.features, F.promo); }},
+    {id:'lang', type:'text', s:'Второй язык', title:'На каком языке вторая версия?', ph:'Английский', show:function(a){ return inc(a.features, F.lang); }},
+    {id:'logo_wish', type:'textarea', s:'Пожелания к логотипу', title:'Пожелания к логотипу', ph:'Простой знак, синие тона, без зуба в лоб', show:function(a){ return inc(a.features, F.logo); }},
+    {id:'print', type:'multi', chips:1, other:1, s:'Печать', title:'Что нужно напечатать?', options:['Визитки','Листовки','Наклейка с QR на ресепшн','Памятка пациенту после лечения','Другое'], show:function(a){ return inc(a.features, F.print); }}
+  ]
+},
+{
+  id:'tech', nav:'Техника и документы', title:'Техника и документы', emoji:'📄',
+  lead:'Скучная, но важная часть: из-за неё через год возникают вопросы «почему сайт выключился».',
+  q:[
+    {id:'domain', type:'single', s:'Домен', title:'Домен: адрес сайта', options:['Домен есть','Нет, подберите варианты','Нет, куплю сам']},
+    {id:'domain_name', type:'text', s:'Адрес домена', title:'Какой у вас домен?', ph:'novaya-ulybka.ru', inputmode:'url', show:function(a){ return a.domain === 'Домен есть'; }},
+    {id:'hosting', type:'single', s:'Хостинг', title:'Где разместить сайт?', hint:'От этого зависит, кто оплачивает хостинг и продление.', options:['Разместите у себя, оплата войдёт в смету','Заведите отдельный аккаунт на клинику','У нас уже есть хостинг']},
+    {id:'requisites', type:'group', req:1, s:'Реквизиты', title:'Реквизиты для подвала сайта', hint:'По закону на сайте медицинской организации должны быть данные о ней и о лицензии.', fields:[
+      {id:'org', label:'Организация или ИП', ph:'ООО «Новая улыбка»', req:1, full:1},
+      {id:'inn', label:'ИНН', ph:'2000000000', req:1, inputmode:'numeric'},
+      {id:'ogrn', label:'ОГРН или ОГРНИП', ph:'1200000000000', inputmode:'numeric'},
+      {id:'license', label:'Номер и дата лицензии', ph:'Л041-01170-20/00000000 от 01.02.2020', full:1}
+    ]},
+    {id:'contacts', type:'group', req:1, any:1, s:'Контакты на сайте', title:'Какие контакты показывать на сайте?', hint:'Заполните только то, что должны видеть пациенты.', fields:[
+      {id:'phone', label:'Телефон', ph:'+7 900 000-00-00', inputmode:'tel', type:'tel'},
+      {id:'wa', label:'WhatsApp', ph:'+7 900 000-00-00', inputmode:'tel', type:'tel'},
+      {id:'tg', label:'Telegram', ph:'@clinic'},
+      {id:'ig', label:'Instagram или соцсети', ph:'@clinic'},
+      {id:'mail', label:'Почта', ph:'clinic@mail.ru', inputmode:'email', type:'email'}
+    ]},
+    {id:'legal', type:'single', chips:1, s:'Документы', title:'Политика конфиденциальности, согласие на обработку данных', options:['Есть свои','Нет, подготовьте','Не знаю']},
+    {id:'metrika', type:'single', chips:1, s:'Яндекс Метрика', title:'Яндекс Метрика', options:['Счётчик есть','Нет, подключите','Не знаю, что это']}
+  ]
+},
+{
+  id:'budget', nav:'Сроки и бюджет', title:'Сроки и бюджет', emoji:'📅',
+  lead:'Последний шаг. Честные цифры помогут сразу предложить решение под вашу задачу, без лишних кругов.',
+  q:[
+    {id:'deadline', type:'single', chips:1, req:1, s:'Когда нужен', title:'Когда нужен сайт?', options:['Как можно скорее','В течение месяца','Через 1–2 месяца','Не горит']},
+    {id:'date', type:'text', s:'Важная дата', title:'Есть дата, к которой важно успеть?', ph:'Открытие филиала 1 декабря'},
+    {id:'money', type:'single', chips:1, req:1, s:'Бюджет', title:'На какой бюджет рассчитываете?', hint:CONFIG.budgetHint, options:CONFIG.budget},
+    {id:'support', type:'single', s:'Поддержка', title:'Нужна ли поддержка после запуска?', options:['Да, ежемесячно: правки, обновления, контроль','Только по запросу','Нет, справимся сами']},
+    {id:'decision', type:'single', s:'Решение принимает', title:'Кто принимает решение по сайту?', options:['Я сам','Вместе с партнёром','Руководитель, я заполняю за него']},
+    {id:'person', type:'group', req:1, s:'Контактное лицо', title:'Как с вами связаться?', fields:[
+      {id:'pname', label:'Имя', ph:'Магомед', req:1},
+      {id:'prole', label:'Должность', ph:'Директор'},
+      {id:'pphone', label:'Телефон', ph:'+7 900 000-00-00', req:1, inputmode:'tel', type:'tel'},
+      {id:'ptime', label:'Когда удобно созвониться', ph:'После 18:00'}
+    ]},
+    {id:'extra', type:'textarea', s:'Дополнительно', title:'Что ещё важно знать?', hint:'Всё, что не вошло в вопросы выше.'}
+  ]
+}
+];
+var FINAL = BLOCKS.length;
+
+/* ================= СОСТОЯНИЕ ================= */
+var state = { a:{}, step:0, touched:{} };
+var Q = {};          // id -> {q, bi, el}
+var sections = [];   // DOM блоков
+var sideBtns = [];
+var finalEls = {};
+var saveTimer = null;
+var hasStorage = (function(){ try{ var k='__t'; localStorage.setItem(k,'1'); localStorage.removeItem(k); return true; }catch(e){ return false; } })();
+
+function load(){
+  if(!hasStorage) return false;
+  try{
+    var raw = localStorage.getItem(CONFIG.storageKey);
+    if(!raw) return false;
+    var d = JSON.parse(raw);
+    if(d && typeof d === 'object'){
+      state.a = d.a || {};
+      state.step = Math.min(Math.max(parseInt(d.step,10)||0, 0), FINAL);
+      state.touched = d.touched || {};
+      return Object.keys(state.a).length > 0;
+    }
+  }catch(e){}
+  return false;
+}
+function save(){
+  if(!hasStorage) return;
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(function(){
+    try{
+      localStorage.setItem(CONFIG.storageKey, JSON.stringify(state));
+      var s = document.getElementById('mSaved');
+      if(s) s.textContent = 'Черновик сохранён';
+    }catch(e){}
+  }, 250);
+}
+
+/* ================= ПОМОЩНИКИ ================= */
+function esc(s){ return String(s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+function trim(v){ return typeof v === 'string' ? v.trim() : ''; }
+function pad(n){ return n < 10 ? '0' + n : '' + n; }
+var CHECK = '<svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2.5 7.4l2.9 2.9 6-6.4" fill="none" stroke="#15306F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+
+var toastTimer = null;
+function toast(msg, ms){
+  var t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(function(){ t.classList.remove('show'); }, ms || 2600);
+}
+
+function isVisible(q){ return !q.show || !!q.show(state.a); }
+
+function isAnswered(q){
+  var v = state.a[q.id];
+  switch(q.type){
+    case 'text':
+    case 'textarea': return trim(v).length > 0;
+    case 'single': return !!v;
+    case 'multi': return Array.isArray(v) && v.length > 0;
+    case 'group':
+      if(!v || typeof v !== 'object') return false;
+      var filled = q.fields.filter(function(f){ return trim(v[f.id]).length > 0; });
+      if(q.any) return filled.length > 0;
+      var reqF = q.fields.filter(function(f){ return f.req; });
+      if(!reqF.length) return filled.length > 0;
+      return reqF.every(function(f){ return trim(v[f.id]).length > 0; });
+  }
+  return false;
+}
+function hasAny(q){
+  if(q.type === 'group'){
+    var v = state.a[q.id];
+    return !!v && q.fields.some(function(f){ return trim(v[f.id]).length > 0; });
+  }
+  return isAnswered(q);
+}
+
+function visibleQs(bi){ return BLOCKS[bi].q.filter(isVisible); }
+function missingIn(bi){ return visibleQs(bi).filter(function(q){ return q.req && !isAnswered(q); }); }
+
+/* ================= ОТРИСОВКА ВОПРОСОВ ================= */
+function autosize(ta){
+  if(!ta || ta.offsetParent === null) return;
+  ta.style.height = 'auto';
+  ta.style.height = Math.max(108, ta.scrollHeight + 3) + 'px';
+}
+
+function makeInput(q, field){
+  var isArea = !field && q.type === 'textarea';
+  var el = document.createElement(isArea ? 'textarea' : 'input');
+  el.className = 'inp';
+  if(!isArea){
+    el.type = (field && field.type) || (q.inputmode === 'url' ? 'text' : 'text');
+    if(field && field.type) el.type = field.type;
+  }
+  var im = field ? field.inputmode : q.inputmode;
+  if(im) el.setAttribute('inputmode', im);
+  var ph = field ? field.ph : q.ph;
+  if(ph) el.placeholder = ph;
+  el.setAttribute('autocomplete', 'off');
+  if(field && field.type === 'tel') el.setAttribute('autocomplete','tel');
+  if(isArea) el.rows = 3;
+  return el;
+}
+
+function renderQuestion(q, bi){
+  var el = document.createElement('section');
+  el.className = 'q';
+  el.id = 'q-' + q.id;
+  el.innerHTML =
+    '<div class="qn" aria-hidden="true"></div>' +
+    '<div class="qc">' +
+      '<h3 class="qt" id="t-' + q.id + '">' + esc(q.title) + (q.req ? '<span class="req" aria-hidden="true">*</span><span class="sr">обязательный вопрос</span>' : '') + '</h3>' +
+      (q.hint ? '<p class="qh">' + esc(q.hint) + '</p>' : '') +
+      '<div class="qb"></div>' +
+      '<div class="need-msg">' + (q.type === 'group' && q.any ? 'Заполните хотя бы одно поле' : 'Обязательный вопрос, ответьте, пожалуйста') + '</div>' +
+    '</div>';
+  var body = el.querySelector('.qb');
+  var v = state.a[q.id];
+
+  if(q.type === 'text' || q.type === 'textarea'){
+    var inp = makeInput(q);
+    inp.setAttribute('aria-labelledby', 't-' + q.id);
+    inp.value = typeof v === 'string' ? v : '';
+    inp.addEventListener('input', function(){
+      if(inp.value.trim()) state.a[q.id] = inp.value; else delete state.a[q.id];
+      if(q.type === 'textarea') autosize(inp);
+      changed(q);
+    });
+    body.appendChild(inp);
+  }
+
+  if(q.type === 'single' || q.type === 'multi'){
+    var multi = q.type === 'multi';
+    var wrap = document.createElement('div');
+    wrap.className = 'opts' + (q.chips ? ' chips' : '');
+    wrap.setAttribute('role', multi ? 'group' : 'radiogroup');
+    wrap.setAttribute('aria-labelledby', 't-' + q.id);
+    q.options.forEach(function(o){
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'opt' + (multi ? ' multi' : '');
+      b.setAttribute('role', multi ? 'checkbox' : 'radio');
+      b.dataset.v = o;
+      b.innerHTML = '<span class="ind">' + (multi ? CHECK : '') + '</span><span>' + esc(o) + '</span>';
+      b.addEventListener('click', function(){ pick(q, o); });
+      wrap.appendChild(b);
+    });
+    body.appendChild(wrap);
+    if(q.other){
+      var oi = document.createElement('input');
+      oi.type = 'text';
+      oi.className = 'inp other';
+      oi.placeholder = 'Уточните, что именно';
+      oi.setAttribute('aria-label', 'Уточнение к варианту «Другое»');
+      oi.value = state.a[q.id + '__other'] || '';
+      oi.addEventListener('input', function(){
+        if(oi.value.trim()) state.a[q.id + '__other'] = oi.value; else delete state.a[q.id + '__other'];
+        save();
+      });
+      body.appendChild(oi);
+    }
+  }
+
+  if(q.type === 'group'){
+    var g = document.createElement('div');
+    g.className = 'grid2';
+    q.fields.forEach(function(f){
+      var lab = document.createElement('label');
+      lab.className = 'fld' + (f.full ? ' full' : '');
+      lab.innerHTML = '<span class="fl">' + esc(f.label) + (f.req && !q.any ? '<span class="req" aria-hidden="true">*</span>' : '') + '</span>';
+      var inp = makeInput(q, f);
+      inp.value = (v && v[f.id]) || '';
+      inp.addEventListener('input', function(){
+        var cur = state.a[q.id] && typeof state.a[q.id] === 'object' ? state.a[q.id] : {};
+        if(inp.value.trim()) cur[f.id] = inp.value; else delete cur[f.id];
+        if(Object.keys(cur).length) state.a[q.id] = cur; else delete state.a[q.id];
+        changed(q);
+      });
+      lab.appendChild(inp);
+      g.appendChild(lab);
+    });
+    body.appendChild(g);
+  }
+
+  Q[q.id] = { q:q, bi:bi, el:el };
+  syncOptions(q);
+  return el;
+}
+
+function pick(q, o){
+  var a = state.a;
+  if(q.type === 'single'){
+    if(a[q.id] === o) delete a[q.id]; else a[q.id] = o;
+  } else {
+    var arr = Array.isArray(a[q.id]) ? a[q.id].slice() : [];
+    var i = arr.indexOf(o);
+    if(i !== -1){ arr.splice(i, 1); }
+    else {
+      if(q.max && arr.length >= q.max){ toast('Можно выбрать до ' + q.max + '. Снимите один вариант, чтобы выбрать другой'); return; }
+      arr.push(o);
+    }
+    if(arr.length) a[q.id] = arr; else delete a[q.id];
+  }
+  syncOptions(q);
+  changed(q);
+}
+
+function syncOptions(q){
+  if(q.type !== 'single' && q.type !== 'multi') return;
+  var rec = Q[q.id]; if(!rec) return;
+  var v = state.a[q.id];
+  var btns = rec.el.querySelectorAll('.opt');
+  for(var i=0;i<btns.length;i++){
+    var o = btns[i].dataset.v;
+    var on = q.type === 'single' ? v === o : inc(v, o);
+    btns[i].classList.toggle('on', on);
+    btns[i].setAttribute('aria-checked', on ? 'true' : 'false');
+  }
+  if(q.other){
+    var oi = rec.el.querySelector('.other');
+    var showOther = q.type === 'single' ? v === 'Другое' : inc(v, 'Другое');
+    oi.hidden = !showOther;
+  }
+}
+
+/* ================= ОБНОВЛЕНИЯ ================= */
+function changed(q){
+  refreshVisibility();
+  paintNeed();
+  updateCounts();
+  save();
+}
+
+function refreshVisibility(){
+  var n = 0;
+  BLOCKS.forEach(function(b){
+    b.q.forEach(function(q){
+      var rec = Q[q.id];
+      var vis = isVisible(q);
+      if(rec.el.hidden === vis){
+        rec.el.hidden = !vis;
+        if(vis){ var ta = rec.el.querySelector('textarea'); if(ta) requestAnimationFrame(function(){ autosize(ta); }); }
+      }
+      if(vis){ n++; rec.el.querySelector('.qn').textContent = n; }
+    });
+  });
+}
+
+function paintNeed(){
+  BLOCKS.forEach(function(b, bi){
+    b.q.forEach(function(q){
+      var rec = Q[q.id];
+      var need = !!(q.req && state.touched[bi] && isVisible(q) && !isAnswered(q));
+      rec.el.classList.toggle('need', need);
+    });
+  });
+}
+
+function updateCounts(){
+  var total = 0, done = 0;
+  BLOCKS.forEach(function(b, bi){
+    var vq = visibleQs(bi);
+    var d = vq.filter(hasAny).length;
+    total += vq.length; done += d;
+    var miss = missingIn(bi).length;
+    var cnt = sideBtns[bi].querySelector('.cnt');
+    var hasReq = vq.some(function(q){ return q.req; });
+    cnt.className = 'cnt';
+    if(miss === 0 && hasReq && d > 0){ cnt.classList.add('done'); }
+    else if(miss > 0 && state.touched[bi]){ cnt.classList.add('miss'); }
+    cnt.textContent = d + '/' + vq.length;
+  });
+  document.getElementById('mDone').textContent = done;
+  document.getElementById('mTotal').textContent = total;
+  document.getElementById('mBar').style.width = (total ? Math.round(done / total * 100) : 0) + '%';
+}
+
+/* ================= БЛОКИ И НАВИГАЦИЯ ================= */
+function buildSide(){
+  var side = document.getElementById('side');
+  BLOCKS.forEach(function(b, bi){
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'side-btn';
+    btn.innerHTML = '<span>' + esc(b.nav) + '</span><span class="cnt"></span>';
+    btn.addEventListener('click', function(){ goTo(bi, {fromSide:true}); });
+    side.appendChild(btn);
+    sideBtns.push(btn);
+  });
+  var fb = document.createElement('button');
+  fb.type = 'button';
+  fb.className = 'side-btn';
+  fb.innerHTML = '<span>Отправка</span><span class="cnt"></span>';
+  fb.addEventListener('click', function(){ goTo(FINAL, {fromSide:true}); });
+  side.appendChild(fb);
+  sideBtns.push(fb);
+}
+
+function buildBlocks(){
+  var main = document.getElementById('main');
+  BLOCKS.forEach(function(b, bi){
+    var s = document.createElement('div');
+    s.className = 'blk';
+    s.innerHTML =
+      '<p class="kick"><b>' + pad(bi + 1) + '</b> · Блок ' + (bi + 1) + ' из ' + BLOCKS.length + '</p>' +
+      '<h2 class="blk-title">' + esc(b.title) + '</h2>' +
+      '<p class="lead">' + esc(b.lead) + '</p>' +
+      (b.intro ? '<div class="note">Здравствуйте! Этот бриф займёт <b>10–15 минут</b>, большая часть ответов в один клик. Ответы сохраняются на этом устройстве: можно закрыть страницу и вернуться позже. Вопросы со звёздочкой обязательные, остальные по желанию.</div>' : '');
+    b.q.forEach(function(q){ s.appendChild(renderQuestion(q, bi)); });
+    main.appendChild(s);
+    sections.push(s);
+  });
+
+  // Блок отправки
+  var f = document.createElement('div');
+  f.className = 'blk';
+  f.innerHTML =
+    '<p class="kick"><b>' + pad(FINAL + 1) + '</b> · Финал</p>' +
+    '<h2 class="blk-title">Отправка</h2>' +
+    '<p class="lead">Проверьте ответы и отправьте мне удобным способом. Текст соберётся сам.</p>' +
+    '<div class="status" id="fStatus"></div>' +
+    '<ol class="steps">' +
+      '<li><span><b>Нажмите «Отправить в WhatsApp» или «Отправить в Telegram».</b> Ответы скопируются, откроется чат со мной.</span></li>' +
+      '<li><span><b>Отправьте сообщение.</b> Если текст не появился в поле сам, вставьте его: он уже скопирован.</span></li>' +
+      '<li><span><b>Следом пришлите файлы:</b> прайс, фото клиники и врачей, логотип. Оригиналами, не скриншотами.</span></li>' +
+    '</ol>' +
+    '<p class="sum-label">Ваши ответы</p>' +
+    '<textarea class="summary" id="fSummary" readonly aria-label="Текст брифа"></textarea>' +
+    '<div class="send">' +
+      '<button type="button" class="btn btn-main" id="sendWa">Отправить в WhatsApp</button>' +
+      '<button type="button" class="btn btn-main" id="sendTg">Отправить в Telegram</button>' +
+      '<button type="button" class="btn btn-light wide" id="copyOnly">Только скопировать текст</button>' +
+    '</div>' +
+    '<button type="button" class="reset" id="resetAll">Очистить ответы и начать заново</button>';
+  main.appendChild(f);
+  sections.push(f);
+  finalEls.status = f.querySelector('#fStatus');
+  finalEls.summary = f.querySelector('#fSummary');
+  f.querySelector('#sendWa').addEventListener('click', sendWhatsApp);
+  f.querySelector('#sendTg').addEventListener('click', sendTelegram);
+  f.querySelector('#copyOnly').addEventListener('click', copyOnly);
+  f.querySelector('#resetAll').addEventListener('click', resetAll);
+}
+
+function goTo(i, opts){
+  opts = opts || {};
+  var from = state.step;
+  if(from < FINAL && i > from){
+    state.touched[from] = true;
+    if(!opts.silent && i === from + 1 && i !== FINAL && missingIn(from).length){
+      toast('В блоке остались обязательные вопросы. Можно вернуться к ним позже', 3200);
+    }
+  }
+  if(i === FINAL){ for(var k=0;k<FINAL;k++) state.touched[k] = true; }
+  state.step = i;
+  show(i);
+  paintNeed();
+  updateCounts();
+  save();
+  if(!opts.keepScroll) window.scrollTo({ top:0, behavior: opts.instant ? 'auto' : 'smooth' });
+}
+
+function show(i){
+  sections.forEach(function(s, k){ s.classList.toggle('on', k === i); });
+  sideBtns.forEach(function(b, k){
+    b.classList.toggle('on', k === i);
+    if(k === i) b.setAttribute('aria-current', 'step'); else b.removeAttribute('aria-current');
+  });
+  // горизонтальная прокрутка меню на телефоне, без сдвига страницы
+  var side = document.getElementById('side');
+  var act = sideBtns[i];
+  if(side.scrollWidth > side.clientWidth && act){
+    side.scrollTo({ left: Math.max(0, act.offsetLeft - 16), behavior:'smooth' });
+  }
+  var tas = sections[i].querySelectorAll('textarea.inp');
+  requestAnimationFrame(function(){ for(var t=0;t<tas.length;t++) autosize(tas[t]); });
+
+  var prev = document.getElementById('prev');
+  var next = document.getElementById('next');
+  prev.disabled = i === 0;
+  next.hidden = i === FINAL;
+  if(i === FINAL) renderFinal();
+}
+
+/* ================= ФИНАЛ ================= */
+function renderFinal(){
+  var miss = [];
+  BLOCKS.forEach(function(b, bi){ missingIn(bi).forEach(function(q){ miss.push({ q:q, bi:bi }); }); });
+  var st = finalEls.status;
+  st.innerHTML = '';
+  if(miss.length){
+    st.className = 'status bad';
+    st.innerHTML = '<h3>Без ответа ' + miss.length + ' ' + plural(miss.length, ['обязательный вопрос','обязательных вопроса','обязательных вопросов']) + '</h3>' +
+      '<p>Отправить можно и так, но с ответами сайт получится точнее. Нажмите на вопрос, чтобы перейти к нему.</p>';
+    var list = document.createElement('div');
+    list.className = 'miss-list';
+    miss.forEach(function(m){
+      var c = document.createElement('button');
+      c.type = 'button';
+      c.className = 'miss-chip';
+      c.textContent = Q[m.q.id].el.querySelector('.qn').textContent + '. ' + (m.q.s || m.q.title);
+      c.addEventListener('click', function(){ jumpTo(m.q.id); });
+      list.appendChild(c);
+    });
+    st.appendChild(list);
+  } else {
+    st.className = 'status good';
+    st.innerHTML = '<h3>Все обязательные вопросы заполнены</h3><p>Осталось отправить. Спасибо, что ответили подробно.</p>';
+  }
+  finalEls.summary.value = buildSummary();
+}
+
+function jumpTo(id){
+  var rec = Q[id];
+  goTo(rec.bi, { keepScroll:true, silent:true });
+  requestAnimationFrame(function(){
+    rec.el.scrollIntoView({ behavior:'smooth', block:'center' });
+    rec.el.classList.add('flash');
+    setTimeout(function(){ rec.el.classList.remove('flash'); }, 1800);
+  });
+}
+
+function plural(n, f){
+  var m10 = n % 10, m100 = n % 100;
+  if(m10 === 1 && m100 !== 11) return f[0];
+  if(m10 >= 2 && m10 <= 4 && (m100 < 10 || m100 >= 20)) return f[1];
+  return f[2];
+}
+
+function valueText(q){
+  var v = state.a[q.id];
+  var other = trim(state.a[q.id + '__other']);
+  switch(q.type){
+    case 'text':
+    case 'textarea': return trim(v);
+    case 'single': return (v === 'Другое' && other) ? 'Другое: ' + other : v;
+    case 'multi': return v.map(function(x){ return (x === 'Другое' && other) ? 'Другое: ' + other : x; }).join(', ');
+    case 'group': return q.fields.filter(function(f){ return trim(v[f.id]); }).map(function(f){ return f.label + ': ' + trim(v[f.id]); }).join('; ');
+  }
+  return '';
+}
+
+function buildSummary(){
+  var a = state.a;
+  var lines = [];
+  var total = 0, done = 0, skipped = 0, miss = [];
+  lines.push('🦷 БРИФ НА САЙТ КЛИНИКИ');
+  if(trim(a.name)) lines.push('Клиника: ' + trim(a.name));
+  var p = a.person || {};
+  var who = [trim(p.pname), trim(p.prole), trim(p.pphone)].filter(Boolean).join(', ');
+  if(who) lines.push('Контакт: ' + who);
+  lines.push('Дата: ' + new Date().toLocaleDateString('ru-RU'));
+  var body = [];
+  BLOCKS.forEach(function(b, bi){
+    var part = [];
+    visibleQs(bi).forEach(function(q){
+      total++;
+      if(hasAny(q)){
+        done++;
+        var t = valueText(q).replace(/\r/g,'').replace(/\n+/g, '\n   ');
+        part.push('• ' + q.s + ': ' + t);
+        if(q.req && !isAnswered(q)) miss.push(Q[q.id].el.querySelector('.qn').textContent + ' ' + q.s);
+      } else if(q.req){
+        miss.push(Q[q.id].el.querySelector('.qn').textContent + ' ' + q.s);
+      } else {
+        skipped++;
+      }
+    });
+    if(part.length){
+      body.push('');
+      body.push(b.emoji + ' ' + b.title.toUpperCase());
+      body = body.concat(part);
+    }
+  });
+  lines.push('Заполнено: ' + done + ' из ' + total);
+  lines = lines.concat(body);
+  lines.push('');
+  if(miss.length) lines.push('⚠️ Без ответа: ' + miss.map(function(m){ return '№' + m; }).join(', '));
+  else lines.push('✅ Все обязательные вопросы заполнены');
+  if(skipped) lines.push('ℹ️ Необязательных пропущено: ' + skipped);
+  return lines.join('\n');
+}
+
+/* ================= КОПИРОВАНИЕ И ОТПРАВКА ================= */
+function legacyCopy(text){
+  var y = window.pageYOffset;
+  var ta = document.createElement('textarea');
+  ta.value = text;
+  ta.setAttribute('readonly', '');
+  ta.style.cssText = 'position:fixed;top:0;left:0;width:1px;height:1px;padding:0;border:0;opacity:0;pointer-events:none;font-size:16px';
+  document.body.appendChild(ta);
+  try{ ta.focus({ preventScroll:true }); }catch(e){ ta.focus(); }
+  ta.select();
+  try{ ta.setSelectionRange(0, text.length); }catch(e){}
+  var ok = false;
+  try{ ok = document.execCommand('copy'); }catch(e){}
+  document.body.removeChild(ta);
+  if(window.getSelection) window.getSelection().removeAllRanges();
+  if(window.pageYOffset !== y) window.scrollTo(0, y);
+  return ok;
+}
+function copyText(text){
+  if(navigator.clipboard && window.isSecureContext){
+    return navigator.clipboard.writeText(text).then(function(){ return true; }, function(){ return legacyCopy(text); });
+  }
+  return Promise.resolve(legacyCopy(text));
+}
+function openLink(url){
+  var link = document.createElement('a');
+  link.href = url;
+  link.target = '_blank';
+  link.rel = 'noopener';
+  link.style.display = 'none';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+function freshText(){
+  var t = buildSummary();
+  finalEls.summary.value = t;
+  return t;
+}
+function sendWhatsApp(){
+  var text = freshText();
+  var p = copyText(text);
+  var url = 'https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent(text);
+  var long = url.length > 30000;
+  if(long) url = 'https://wa.me/' + CONFIG.whatsapp;
+  openLink(url);
+  p.then(function(ok){
+    toast(long ? (ok ? 'Текст длинный: он скопирован, вставьте его в чат' : 'Скопируйте текст из поля и вставьте в чат')
+               : (ok ? 'Текст скопирован. Если он не появился в чате, вставьте его' : 'Открываю WhatsApp'), 3600);
+  });
+}
+function sendTelegram(){
+  var text = freshText();
+  var p = copyText(text);
+  openLink('https://t.me/' + CONFIG.telegram);
+  p.then(function(ok){
+    toast(ok ? 'Текст скопирован. Вставьте его в чат и отправьте' : 'Скопируйте текст из поля и вставьте в чат', 3600);
+  });
+}
+function copyOnly(){
+  var text = freshText();
+  copyText(text).then(function(ok){
+    toast(ok ? 'Скопировано' : 'Не получилось скопировать. Выделите текст в поле вручную');
+  });
+}
+var lastFocus = null;
+function openReset(){
+  var m = document.getElementById('resetModal');
+  lastFocus = document.activeElement;
+  m.classList.add('show');
+  m.setAttribute('aria-hidden','false');
+  setTimeout(function(){ try{ document.getElementById('resetNo').focus({ preventScroll:true }); }catch(e){} }, 50);
+}
+function closeReset(){
+  var m = document.getElementById('resetModal');
+  m.classList.remove('show');
+  m.setAttribute('aria-hidden','true');
+  if(lastFocus && lastFocus.focus){ try{ lastFocus.focus({ preventScroll:true }); }catch(e){} }
+}
+function resetAll(){ openReset(); }
+
+function doReset(){
+  // 1. стираем сохранённое
+  clearTimeout(saveTimer);
+  try{ localStorage.removeItem(CONFIG.storageKey); }catch(e){}
+  // 2. обнуляем состояние
+  state.a = {};
+  state.touched = {};
+  state.step = 0;
+  // 3. очищаем все поля и кнопки на странице
+  var fields = document.querySelectorAll('#main .inp');
+  for(var i=0;i<fields.length;i++){ fields[i].value = ''; if(fields[i].tagName === 'TEXTAREA') fields[i].style.height = ''; }
+  BLOCKS.forEach(function(b){ b.q.forEach(function(q){ syncOptions(q); }); });
+  finalEls.summary.value = '';
+  refreshVisibility();
+  paintNeed();
+  updateCounts();
+  document.getElementById('mSaved').textContent = '10–15 минут';
+  closeReset();
+  // 4. на первый блок
+  show(0);
+  window.scrollTo({ top:0, behavior:'auto' });
+  toast('Бриф очищен. Можно начинать заново');
+}
+
+/* ================= ЗАПУСК ================= */
+var restored = load();
+buildSide();
+buildBlocks();
+refreshVisibility();
+paintNeed();
+updateCounts();
+show(state.step);
+
+document.getElementById('resetNo').addEventListener('click', closeReset);
+document.getElementById('resetYes').addEventListener('click', doReset);
+document.getElementById('resetModal').addEventListener('click', function(e){ if(e.target === this) closeReset(); });
+document.addEventListener('keydown', function(e){
+  var m = document.getElementById('resetModal');
+  if(e.key === 'Escape' && m.classList.contains('show')) closeReset();
+});
+
+document.getElementById('prev').addEventListener('click', function(){ if(state.step > 0) goTo(state.step - 1); });
+document.getElementById('next').addEventListener('click', function(){ if(state.step < FINAL) goTo(state.step + 1); });
+
+window.addEventListener('resize', function(){
+  var tas = sections[state.step].querySelectorAll('textarea.inp');
+  for(var t=0;t<tas.length;t++) autosize(tas[t]);
+});
+
+if(restored){
+  document.getElementById('mSaved').textContent = 'Черновик сохранён';
+  setTimeout(function(){ toast('С возвращением! Ваши ответы на месте'); }, 400);
+}
+})();
+</script>
+</body>
+</html>
